@@ -1,3 +1,4 @@
+### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -23,7 +24,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -52,6 +52,7 @@ coverage.xml
 *.pot
 
 # Django stuff:
+staticfiles/
 *.log
 local_settings.py
 db.sqlite3
@@ -87,8 +88,6 @@ celerybeat-schedule
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -102,3 +101,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+data/
