@@ -9,12 +9,13 @@ numpy = "*"
 pandas = "*"
 scipy = "*"
 jupyter = "*"
-notebook = "*"
 pyparsing = "*"
 holoviews = "*"
 datashader = "*"
+django = "*"
+prompt-toolkit = "==2.0.5"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
