@@ -14,6 +14,11 @@ holoviews = "*"
 datashader = "*"
 django = "*"
 prompt-toolkit = "==2.0.5"
+sklearn = "*"
+sympy = "*"
+django-environ = "*"
+django-extensions = "*"
+"psycopg2" = "*"
 
 [dev-packages]
 

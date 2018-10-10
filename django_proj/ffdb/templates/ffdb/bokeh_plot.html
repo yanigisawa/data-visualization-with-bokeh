@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!--
+    GOT-CHA:
+    Version numbers of Bokeh referenced here must match the installed version of bokeh
+    that is running from the python server (django in this case)
+-->
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bokeh/0.13.0/bokeh.min.css"
+    rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/0.13.0/bokeh.min.js"></script>
+
+
+<body>
+
+    <h1>Fantasy Football Stats!</h1>
+
+    <p> Below is a simple plot of Fantasy Football Player Stats</p>
+
+    {{ script | safe }}
+
+    {{ div | safe}}
+
+</body>
+
+</html>
