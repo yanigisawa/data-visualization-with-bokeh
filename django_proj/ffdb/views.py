@@ -24,10 +24,13 @@ def index(req):
     player_name = 'Jamaal Charles'
     years = PlayerStat.objects.filter(player_name=player_name).values('year').distinct()
     graphs = []
-    x_range, y_range=(1, 16), (0, 55)
+    x_range, y_range= (1, 16), (0, 55)
 
     for y in years:
         df = pd.DataFrame(list(PlayerStat.objects.filter(player_name=player_name, year=y['year']).values()))
+
+        if graphs:
+            x_range, y_range = graphs[0].x_range, graphs[0].y_range
 
         f = figure(plot_width=800, plot_height=250,
             title=f'{player_name} - {y["year"]}', y_range=y_range, x_range=x_range)
