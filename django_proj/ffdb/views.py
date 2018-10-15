@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from bokeh.plotting import figure
-from bokeh.embed import components
 from bokeh.models import ColumnDataSource
 from bokeh.layouts import column
 import pandas as pd
 from ffdb.models import PlayerStat
 
+from bokeh.embed import components
 
 def index_single(req):
 
