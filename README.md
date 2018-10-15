@@ -1,5 +1,11 @@
 # data-visualization-with-bokeh
 
+This repository holds a jupyter notebook and django project I used to present at the PyData Indianapolis one-day conference on 10/12/2018. See below for how to install dependencies and run the django project.
+
+The notebook contained in this repo is also available as a Google Colaboratory notebook [here](http://bit.ly/pydata-bokeh).
+
+## Installation
+
 Requires [pipenv](https://pipenv.readthedocs.io/en/latest/) (wraps around virtualenv and `pip install` automatically)
 
 Run `pipenv install` to install dependencies
